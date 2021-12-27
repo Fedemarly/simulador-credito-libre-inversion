@@ -36,7 +36,7 @@ function calcularCuota(monto, interes, tiempo){
 
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${fechas[i]}</td>
+            <td>${numeros[i]}</td>
             <td>${cuota.toFixed(2)}</td>
             <td>${pagoCapital.toFixed(2)}</td>
             <td>${pagoInteres.toFixed(2)}</td>
