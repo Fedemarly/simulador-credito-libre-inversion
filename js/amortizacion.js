@@ -28,13 +28,14 @@ function calcularCuota(monto, interes, tiempo){
         pagoInteres = parseFloat(monto*(interes/100));
         pagoCapital = cuota - pagoInteres;
         monto = parseFloat(monto-pagoCapital);
-        monto = monto.toFixed(2)
 
         //Formato fechas
         fechas[i] = 0+i;
 
+         
         const row = document.createElement('tr');
         row.innerHTML = `
+        
             <td>${fechas[i]}</td>
             <td>$${cuota.toLocaleString('en')+"<br>"}</td>
             <td>$${pagoCapital.toLocaleString('en')}</td>
