@@ -28,6 +28,7 @@ function calcularCuota(monto, interes, tiempo){
         pagoInteres = parseFloat(monto*(interes/100));
         pagoCapital = cuota - pagoInteres;
         monto = parseFloat(monto-pagoCapital);
+        monto = monto.toFixed(2)
 
         //Formato fechas
         fechas[i] = 0+i;
@@ -35,10 +36,10 @@ function calcularCuota(monto, interes, tiempo){
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${fechas[i]}</td>
-            <td>$${cuota.toFixed(2)}</td>
-            <td>$${pagoCapital.toFixed(2)}</td>
-            <td>$${pagoInteres.toFixed(2)}</td>
-            <td>$${monto.toFixed(2)}</td>
+            <td>$${cuota.toLocaleString('en')+"<br>"}</td>
+            <td>$${pagoCapital.toLocaleString('en')}</td>
+            <td>$${pagoInteres.toLocaleString('en')}</td>
+            <td>$${monto.toLocaleString('en')}</td>
         `;
         llenarTabla.appendChild(row)
     }
