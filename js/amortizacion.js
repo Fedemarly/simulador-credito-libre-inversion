@@ -31,12 +31,11 @@ function calcularCuota(monto, interes, tiempo){
         monto = parseFloat(monto-pagoCapital);
 
         //Formato fechas
-        fechas[i] = mes_actual.format('DD-MM-YYYY');
-        mes_actual.add(1, 'month');
+        fechas[i] = 0+i;
 
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${numeros[i]}</td>
+            <td>${fechas[i]}</td>
             <td>${cuota.toFixed(2)}</td>
             <td>${pagoCapital.toFixed(2)}</td>
             <td>${pagoInteres.toFixed(2)}</td>
