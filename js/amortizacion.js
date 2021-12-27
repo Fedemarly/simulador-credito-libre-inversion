@@ -38,7 +38,7 @@ function calcularCuota(monto, interes, tiempo){
         row.innerHTML = `
         
             <td>${fechas[i]}</td>
-            <td>$${cuota.toLocaleString('en')+"<br>"}</td>
+            <td>$${cuota.toLocaleString('en')}</td>
             <td>$${pagoCapital.toLocaleString('en')}</td>
             <td>$${pagoInteres.toLocaleString('en')}</td>
             <td>$${monto.toLocaleString('en')}</td>
