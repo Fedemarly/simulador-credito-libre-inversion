@@ -1,4 +1,3 @@
-
 const monto = document.getElementById('monto');
 const tiempo = document.getElementById('tiempo');
 const interes = document.getElementById('interes');
@@ -44,6 +43,3 @@ function calcularCuota(monto, interes, tiempo){
         llenarTabla.appendChild(row)
     }
 }
-
-
-
