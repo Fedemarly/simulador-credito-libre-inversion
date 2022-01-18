@@ -31,10 +31,10 @@ function calcularCronograma(monto, interes, tiempo) {
         monto = monto - amortizacionConstante;
         
         
-        monto = Math.round(monto)
-        cuota = Math.round(cuota)
-        pagoInteres = Math.round(pagoInteres)
-        amortizacionConstante = Math.round(amortizacionConstante)
+        monto = Math.round(monto);
+        cuota = Math.round(cuota);
+        pagoInteres = Math.round(pagoInteres);
+        amortizacionConstante = Math.round(amortizacionConstante);
         
         
         let fecha=[];
